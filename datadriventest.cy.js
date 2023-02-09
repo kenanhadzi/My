@@ -8,7 +8,8 @@ describe("mytestsuite",()=>{
             data.forEach((userdata)=>{
                 cy.get("input[placeholder='Username']").type(userdata.username);
                 cy.get("input[placeholder='Password']").type(userdata.pasword);
-                cy.get("button[type='submit']").click();
+                cy.get("button[type='submit']").click()
+                
                 if(userdata.username=="Admin" && userdata.pasword=="admin123")
                 {
                     cy.get(".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module").should("have.text",userdata.expected);
