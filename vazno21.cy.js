@@ -14,7 +14,7 @@ describe("Test Contact Us form via WebdriverUni", () => {
   });
 
   beforeEach(function () {
-    homepage_PO.visitHompage();
+    homepage_PO.visitHomepage();
     homepage_PO.clickOn_ContactUs_Button();
   });
 
